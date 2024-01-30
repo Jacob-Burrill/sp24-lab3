@@ -64,7 +64,9 @@ enter into the command line:
 >> python cli_example.py -p sounds/coffee.wav
 '''
 
-# TODO: Add in the play command by writing a new if statement
+if sys.argv[1] == '-p' or sys.argv == '--play' :
+    print("I am now playing ", argv[2])
+    sys.exit(0)
 '''
 You can use count as a template/example.
 For now, it doesn't have to actually play a file, but it should take in a filepath as an additional argument
